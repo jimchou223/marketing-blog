@@ -1,5 +1,5 @@
 import React from "react";
-import Question from "../components/question";
+import Question from "../components/Question";
 import ContactUs from "../components/ContactUs";
 import styles from "../styles/Questions.module.css";
 

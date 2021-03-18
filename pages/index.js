@@ -209,14 +209,6 @@ export async function getStaticProps() {
 
   const categories_res = await fetch(`${API_URL}/blog-categories/`);
   const categories = await categories_res.json();
-
-  // const categories = new Set();
-  // blogs.map((el) => {
-  //   categories.add(el.category);
-  //   return true
-  // });
-
-  // return the products as props
   return {
     props: {
       blogs,

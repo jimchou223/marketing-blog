@@ -33,8 +33,8 @@ const Blog = ({ blog, blogs }) => {
         </div>
         <div className={styles.authorWrapper}>
           <small>Posted by </small>
-          <img src={fromImageToUrl(blog.author_slug.image)} />
-          <small>{blog.author_slug.name}</small>
+          <img src={fromImageToUrl(blog.author.image)} />
+          <small>{blog.author.name}</small>
         </div>
 
         <div className={styles.buttonsWrapper}>

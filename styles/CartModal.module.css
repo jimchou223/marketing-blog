@@ -1,0 +1,111 @@
+.modalBody {
+  background-color: antiquewhite;
+  width: 340px;
+  height: 100%;
+  position: fixed;
+  transition: 0.5s all ease-in-out;
+}
+
+.modalHead {
+  display: flex;
+  padding: 20px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalItem {
+  padding: 20px 15px;
+  align-items: center;
+  position: relative;
+}
+
+.modalItem p {
+  margin: 0;
+}
+
+.modalItem i {
+    position: absolute;
+    right: 24px;
+}
+
+.modalItem:hover {
+    background-color: aliceblue;
+}
+
+.modalPanel {
+  display: flex;
+  align-items: center;
+}
+
+.modalPanel input {
+  width: 32px;
+  height: 42px;
+  display: inline-block;
+  padding: 0 5px;
+  border: 2px solid rgba(129, 129, 129, 0.2);
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 14px;
+  transition: border-color 0.5s ease;
+  text-align: center;
+}
+
+.modalPanel button {
+  padding: 0 5px;
+  min-width: 25px;
+  height: 42px;
+  border: 2px solid rgba(129, 129, 129, 0.2);
+  box-shadow: none;
+}
+
+.modalMinus {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.modalPlus {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.modalPanel button:hover {
+  background-color: orange;
+}
+
+.modalOpen {
+  right: 0px;
+}
+
+.modalClose {
+  right: -200px;
+}
+
+.modalTotalPanel {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.modalUpper,
+.modalLower {
+  display: flex;
+  align-items: center;
+}
+
+.modalUpper {
+    padding-bottom: 24px;
+}
+
+.modalUpper h3 {
+    margin-left: 20px;
+}
+
+.modalLower {
+    justify-content: space-between;
+}
+
+.cartImage {
+  width: 100px;
+}

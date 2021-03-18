@@ -1,0 +1,123 @@
+.nav {
+  background-color: #0e153a;
+}
+
+.title {
+  line-height: 24px;
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title a {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  color: #fff;
+}
+
+.title a:hover {
+  color: #fff;
+}
+
+.title h1 {
+  margin: 0;
+}
+
+.searchBar form {
+  display: flex;
+  min-width: 400px;
+}
+
+.searchBar input {
+  width: 80%;
+  padding: 5px;
+  border: 2px gray solid;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.searchBar select {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #777;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: 2px gray solid;
+}
+
+.searchBar button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 2px gray solid;
+  border-left: none;
+  margin: 0;
+  color: #777;
+  font-weight: 400;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.statusBar {
+  display: flex;
+}
+
+.nav {
+  position: relative;
+}
+
+.announce {
+  background-color: #071a52;
+  color: #fff;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.announce p {
+  margin: 0;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.cart,
+.auth {
+  color: blue;
+  text-align: right;
+  position: relative;
+  font-size: 22px;
+  margin: 0 5px;
+}
+
+.cart span {
+  position: absolute;
+  top: -5px;
+  right: -9px;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0 !important;
+  font-weight: 400 !important;
+  font-size: 10px !important;
+  line-height: 15px;
+  background-color: #c56b72;
+}
+
+.hidden {
+  display: none;
+}

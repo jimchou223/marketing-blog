@@ -1,0 +1,123 @@
+.blogsContainer {
+}
+
+.headWrapper {
+  background-color: #f7f7f7;
+  padding: 40px;
+  background-color: #22d1ee;
+  color: #fff;
+}
+
+.blogsWrapper {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+}
+
+.opening {
+  margin: 40px 0;
+}
+
+.opening h1 {
+  font-size: 1.75rem;
+}
+
+.articlesContainer {
+  width: 70%;
+}
+
+.tagsWrapper {
+  display: flex;
+  align-items: flex-end;
+  height: 40px;
+}
+
+.tagHeader {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.tagHeader p {
+  margin: 0;
+}
+
+.tagWrapper {
+  padding: 10px;
+  border: none;
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sideBarContainer {
+  width: 30%;
+  position: relative;
+  border-left: 2px solid #f7f7f7;
+  z-index: 1;
+  margin-left: 40px;
+}
+
+.sideBarContainer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 1500px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.01);
+  visibility: visible;
+  z-index: -1;
+}
+
+.searchConsole,
+.listWrapper {
+  padding: 20px;
+}
+
+.youMayLike h5,
+.trending h5 {
+  border-bottom: 2px solid #727272;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.youMayLike li,
+.trending li {
+  color: #313131;
+  line-height: 15px;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #acacac;
+}
+
+.youMayLike li a,
+.trending li a {
+  color: #313131;
+}
+
+.searchConsole form {
+  margin-top: 20px;
+  display: flex;
+}
+
+.searchConsole input {
+  height: 40px;
+}
+
+.searchConsole button {
+  height: 40px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.listWrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.listWrapper li {
+  cursor: pointer;
+  list-style: none;
+}

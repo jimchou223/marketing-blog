@@ -1,0 +1,53 @@
+.socialBarContainer {
+  list-style: none;
+  text-align: right;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
+}
+
+.socialBarContainer li {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin: 0;
+  min-width: 40px;
+  width: auto;
+  height: 40px;
+}
+
+.socialBarContainer i {
+    padding-left: 10px;
+}
+
+.socialBarContainer li span {
+  overflow: hidden;
+  padding: 0;
+  max-width: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+  transition: padding 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15), max-width .1s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+.socialBarContainer li:hover span {
+    padding: 10px;
+    max-width: 100%;
+}
+
+.instagram {
+  background-color: pink;
+}
+
+.facebook {
+  background-color: blue;
+}
+
+.youtube {
+  background-color: red;
+}

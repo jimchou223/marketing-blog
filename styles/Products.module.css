@@ -1,0 +1,113 @@
+.productsContainer {
+  padding: 40px 0;
+}
+
+.productsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.productFilter {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.productFilter::after {
+  width: 100%;
+  content: '';
+  border-bottom: 1px gray solid;
+  position: absolute;
+  top: 46px;
+  z-index: 0;
+}
+
+.productFilter button {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.productFilterActivated {
+  border: 1px gray solid;
+  border-bottom: #fff 2px solid;
+  z-index: 3;
+}
+
+.productsContainer > div > div > div:nth-child(5n) {
+  margin-right: 0;
+}
+
+.product {
+  width: 17.5%;
+  border: 2px #f7f7f7 solid;
+  margin-top: 30px;
+  margin-right: 3.125%;
+}
+
+.product:hover img {
+  transform: scale(1.5);
+}
+
+.productImg img {
+  transition: all 0.5s linear;
+}
+
+.productImg {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.productTag {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 5;
+}
+
+.productTag span {
+  display: block;
+  margin: 5px 0;
+  color: #fff;
+  padding: 2px;
+  z-index: 5;
+  font-size: 12px;
+}
+
+.popular {
+  background-color: orange;
+}
+
+.select {
+  background-color: green;
+}
+.product a {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  margin-top: 5px;
+}
+
+.standardPrice {
+  color: green;
+}
+
+.withDiscount {
+  color: grey;
+  text-decoration-line: line-through;
+}
+
+.discount {
+  color: red;
+}

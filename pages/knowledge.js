@@ -26,15 +26,21 @@ const blogs = ({ blogs, categories }) => {
 
   useEffect(() => {
     let hashArray = [];
-    blogs.forEach((blog, index) => {
-      let arr = blog.hash.split(",");
-      arr.map((el, index) => {
-        if (!hashArray.includes(el)) {
-          hashArray.push(el);
-        }
+    blogs
+      .filter((el) => el.blog_category.name === "專業知識")
+      .map((blog, index) => {
+        let arr = blog.hash.split(",");
+
+        arr.map((el, index) => {
+          if (!hashArray.includes(el)) {
+            hashArray.push(el);
+          }
+        });
       });
-    });
-    setHash(hashArray);
+
+    let removeDuplicate = (hashArray) => hashArray.filter((v, i) => hashArray.indexOf(v) === i);
+
+    setHash(removeDuplicate(hashArray));
 
     let sortedBlogs = [...blogs];
     sortedBlogs.sort(function(a, b) {
@@ -55,10 +61,8 @@ const blogs = ({ blogs, categories }) => {
   }, []);
 
   let searchResult = [...blogs];
-  //   function searchBlogs(input) {
-  //     searchResult = input.filter((el) => el.content.search(keyword) > 0);
-  //   }
 
+  searchResult = blogs.filter((el) => el.blog_category.name === "專業知識");
   const searchHandler = () => {
     if (keyword !== "") {
       setSearched(true);
@@ -77,7 +81,7 @@ const blogs = ({ blogs, categories }) => {
   return (
     <div className={styles.blogsContainer}>
       <Head>
-        <title>海上絲路4.0工作室｜文章列表</title>
+        <title>海上絲路4.0工作室｜實務操作</title>
       </Head>
       {/* <div className={styles.headWrapper}>
         <h2 className="center">文章列表</h2>
@@ -87,8 +91,8 @@ const blogs = ({ blogs, categories }) => {
       <div className={styles.blogsWrapper}>
         <div className={styles.articlesContainer}>
           <div className={styles.opening}>
-            <h1>關於這個日本行銷知識部落格</h1>
-            <p>吳董還欠我一段屁話，吳董還欠我一段屁話，吳董還欠我一段屁話吳董還欠我一段屁話，吳董還欠我一段屁話，吳董還欠我一段屁話吳董還欠我一段屁話，吳董還欠我一段屁話，吳董還欠我一段屁話，放在這裡</p>
+            <h1>文章列表-專業知識</h1>
+            <p>吳董還欠我一段專業知識的屁話，吳董還欠我一段屁話，吳董還欠我一段屁話吳董還欠我一段屁話，吳董還欠我一段屁話，吳董還欠我一段屁話吳董還欠我一段屁話，吳董還欠我一段屁話，吳董還欠我一段屁話，放在這裡</p>
           </div>
           <div className={styles.tagsWrapper}>
             <div className={styles.tagHeader}>
@@ -127,7 +131,7 @@ const blogs = ({ blogs, categories }) => {
               </button>
             )}
           </div>
-          <Blogs allPostsData={currentCategory || searched || currentHash ? searchResult : blogs} />
+          <Blogs allPostsData={searchResult} />
         </div>
         <div className={styles.sideBarContainer}>
           <div className={styles.searchConsole}>
@@ -138,19 +142,6 @@ const blogs = ({ blogs, categories }) => {
                 搜尋
               </Button>
             </form>
-          </div>
-
-          <div className={styles.listWrapper}>
-            <h5>文章分類</h5>
-            <ul>
-              {categories.map((el, index) => {
-                return (
-                  <li key={index} onClick={() => setCurrentCategory(el)}>
-                    <i className={`fas fa-tag ${el.tag}-point`}></i> {el.name}
-                  </li>
-                );
-              })}
-            </ul>
           </div>
 
           <div className={styles.listWrapper}>
@@ -172,7 +163,7 @@ const blogs = ({ blogs, categories }) => {
             <ul>
               {sortedBlogs.map((el, index) => {
                 return (
-                  <li key={index}>
+                  <li>
                     <Link href={`/blogs/${el.slug}`}>{el.title}</Link>
                   </li>
                 );
@@ -185,7 +176,7 @@ const blogs = ({ blogs, categories }) => {
             <ul>
               {randomBlogs.map((el, index) => {
                 return (
-                  <li key={index}>
+                  <li>
                     <Link href={`/blogs/${blogs[el].slug}`}>{blogs[el].title}</Link>
                   </li>
                 );

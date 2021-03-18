@@ -1,0 +1,65 @@
+.productWrapper {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  padding: 40px 0;
+  position: relative;
+}
+
+.carouselWrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
+.detailWrapper {
+  margin-left: 24px;
+}
+
+.shoppingController {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 24px; */
+}
+
+.addToCart {
+  border: none;
+  color: #000;
+  background-color: #17b978;
+  padding: 10px 20px;
+}
+
+.productFooter {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  transition: all 0.3s linear;
+  border-top: 1px solid #f7f7f7;
+  background-color: #fff;
+}
+.productFooterContainer {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.productFooterContainer p {
+  margin: 0;
+}
+
+.productFooterContainer img {
+  height: 90px;
+}
+
+.hidden {
+  bottom: -100px;
+}
+
+@media only screen and (max-width: 700px) {
+  .productWrapper {
+    padding: 0 24px;
+  }
+}

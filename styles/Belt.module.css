@@ -1,0 +1,16 @@
+.beltContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0e153a;
+    color: #fff;
+}
+
+.cardContainer {
+    display: flex;
+    padding: 80px 0;
+}
+
+.cardImg {
+    font-size: 2em;
+    padding: 0 10px;
+}

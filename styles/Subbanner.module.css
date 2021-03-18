@@ -1,0 +1,18 @@
+.subbannerWrapper {
+    padding: 90px 0;
+    background-color: bisque;
+}
+
+.widthController {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+}
+
+.subbannerLeft {
+    width: 45%;
+}
+
+.subbannerRight {
+    width: 55%;
+}

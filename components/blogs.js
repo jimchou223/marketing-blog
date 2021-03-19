@@ -57,7 +57,7 @@ export default function Announce(props) {
             <i className={`${styles.tag} ${blog_category.tag}`}></i>
             <Link href={`/blogs/${slug}`}>
               <a>
-                <img src={fromImageToUrl(image)} />
+                <img src={image} />
 
                 <div className={styles.textContainer}>
                   <small className="">

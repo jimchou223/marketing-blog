@@ -33,7 +33,7 @@ const Blog = ({ blog, blogs }) => {
         </div>
         <div className={styles.authorWrapper}>
           <small>Posted by </small>
-          <img src={fromImageToUrl(blog.author.image)} />
+          <img src={blog.author.image} />
           <small>{blog.author.name}</small>
         </div>
 

@@ -4,9 +4,10 @@ import styles from "../styles/Banner.module.css";
 const Banner = () => {
   return (
     <div className={styles.bannerWrapper}>
-      <div className="widthController">
-        <h2>關於我們的小屁話關於我們的小屁話關於我們的小屁話</h2>
-        <h1>行銷關鍵字</h1>
+      <div className={`${styles.flex} widthController`}>
+        <h1>行銷部落格</h1>
+        <h2>一個在日本工作的無聊女子，想要跟大家一起看見世界<br/>也被世界看見</h2>
+        
       </div>
     </div>
   );

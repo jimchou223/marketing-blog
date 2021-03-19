@@ -1,10 +1,41 @@
 .bannerWrapper {
-    background-image: url('../public/banner.jpg');
-    height: 300px;
-    text-align: right;
+  background-image: url("../public/banner.jpg");
+  height: 500px;
+  text-align: right;
+  background-size: cover;
+  background-position-y: -200px;
+  color: var(--color-2);
+  position: relative;
+}
+.bannerWrapper::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.flex {
+  position: relative;
+}
+
+.bannerWrapper h1,
+.bannerWrapper h2 {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  padding: 20px 5px 20px 20px;
+}
+
+.bannerWrapper h1 {
+  top: 50px;
 }
 
 .bannerWrapper h2 {
-padding: 20px 0 5px 0;
+  border-top: 1px solid var(--color-2);
+  top: 180px;
+  line-height: 2;
 }
-

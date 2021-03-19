@@ -1,5 +1,6 @@
 .nav {
-  background-color: var(--color-5);
+  background-color: var(--color-2);
+  color: var(--color-5);
 }
 
 .title {
@@ -15,11 +16,7 @@
   display: flex;
   padding: 10px;
   align-items: center;
-  color: #fff;
-}
-
-.title a:hover {
-  color: #fff;
+  color: var(--color-5);
 }
 
 .title h1 {

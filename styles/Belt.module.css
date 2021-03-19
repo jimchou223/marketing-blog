@@ -5,6 +5,10 @@
     color: #fff;
 }
 
+.beltContainer i {
+    color: var(--color-red);
+}
+
 .cardContainer {
     display: flex;
     padding: 80px 0;

@@ -1,7 +1,7 @@
 .navWrapper {
   color: #000;
   box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
-  background-color: #0e153a;
+  background-color: var(--color-5);
   color: #fff;
 }
 
@@ -43,7 +43,8 @@
 }
 
 .dropdownMenu li li:hover {
-  background-color: #e2f3f5;
+  background-color: var(--color-4);
+  color: var(--color-1);
 }
 
 /*--- Sublist Styles ---*/

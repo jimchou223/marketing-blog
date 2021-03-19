@@ -132,7 +132,7 @@ const blogs = ({ blogs, categories }) => {
         <div className={styles.sideBarContainer}>
           <div className={styles.searchConsole}>
             我想要找...
-            <form>
+            <form className={styles.formWrapper}>
               <input value={keyword} onChange={(e) => setKeyword(e.target.value)} />
               <Button color="secondary" onClick={searchHandler}>
                 搜尋

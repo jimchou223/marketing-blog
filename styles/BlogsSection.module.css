@@ -26,6 +26,10 @@
   width: 70%;
 }
 
+.formWrapper button{
+  background-color: var(--color-red);
+}
+
 .tagsWrapper {
   display: flex;
   align-items: flex-end;

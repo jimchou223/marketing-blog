@@ -3,6 +3,16 @@
 #17b978
 #a7ff83 */
 
+:root {
+  --color-1: #fff;
+  --color-2: #f0f0f0;
+  --color-3: #43dde6;
+  --color-4: #4682BF;
+  --color-5: #0e153a;
+
+  --color-red: #ff304f;
+}
+
 html,
 body {
   padding: 0;
@@ -24,11 +34,7 @@ img {
   max-width: 100%;
 }
 
-footer {
-  /* text-align: center; */
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  background-color: #e2f3f5;
-}
+
 
 content {
   position: relative;
@@ -134,7 +140,7 @@ h3 {
 }
 
 .page-item.active .page-link {
-  background-color: gray !important;
-  border-color: gray !important;
+  background-color: var(--color-red) !important;
+  border-color: var(--color-red) !important;
   color: #f7f7f7 !important;
 }

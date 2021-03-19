@@ -11,7 +11,7 @@ const Footer = () => {
     { title: "聯絡我們", href: "" },
   ]
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.linkWrapper}>
         <div className={styles.longLower}>
           <h5>聯絡資訊</h5>
@@ -61,7 +61,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <h5 className="center">&copy; {new Date().getFullYear()} - 海上絲路4.0工作室</h5>
+      <h5 className={styles.copyRight}>&copy; {new Date().getFullYear()} - 海上絲路4.0工作室</h5>
     </footer>
   );
 };

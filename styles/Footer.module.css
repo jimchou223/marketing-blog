@@ -1,3 +1,9 @@
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: var(--color-4);
+  color: var(--color-1);
+}
+
 .linkWrapper {
   display: flex;
   justify-content: space-between;
@@ -16,7 +22,7 @@
 .linkWrapper ul li {
   font-size: 18px;
   margin-bottom: 15px;
-  color: gray;
+  color: #fff;
 }
 
 .linkWrapper li i {
@@ -24,9 +30,16 @@
 }
 
 .linkWrapper a {
-  color: gray;
+  color: #fff;
 }
 
 .linkWrapper h5 {
   margin-bottom: 20px;
+}
+
+
+.copyRight {
+  padding: 20px 0 10px 0;
+  text-align: center;
+  margin: 0;
 }

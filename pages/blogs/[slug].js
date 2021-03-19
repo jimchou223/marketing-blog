@@ -19,8 +19,6 @@ const Blog = ({ blog, blogs }) => {
     router.back();
   };
 
-  const blogContent = marked(blog.content).replace(/src="/g, `src="${API_URL}`);
-
   return (
     <div className={styles.blogContainer}>
       <Head>
@@ -80,7 +78,7 @@ const Blog = ({ blog, blogs }) => {
           </Collapse>
         </div>
 
-        <div dangerouslySetInnerHTML={{ __html: blogContent }} />
+        <div dangerouslySetInnerHTML={{ __html: blog.content }} />
         <div className={styles.goback}>
           <a href="#" onClick={goBack}>
             回文章列表

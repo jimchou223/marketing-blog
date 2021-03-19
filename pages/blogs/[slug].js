@@ -94,7 +94,7 @@ const Blog = ({ blog, blogs }) => {
             return (
               <li className={styles.sideBarList} key={index}>
                 <a href={`/blogs/${el.slug}`}>
-                  <img src={fromImageToUrl(el.image)} />{" "}
+                  <img src={el.image} />
                   <p>
                     {el.title}{" "}
                     <small>

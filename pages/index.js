@@ -204,7 +204,7 @@ export default blogs;
 export async function getStaticProps() {
   // fetch the product
 
-  const blog_res = await fetch(`${API_URL}/blogs/`);
+  const blog_res = await fetch(`${API_URL}/blogs?_sort=view`);
   const blogs = await blog_res.json();
 
   const categories_res = await fetch(`${API_URL}/blog-categories/`);

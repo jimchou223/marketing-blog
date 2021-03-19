@@ -1,0 +1,10 @@
+.bannerWrapper {
+    background-image: url('../public/banner.jpg');
+    height: 300px;
+    text-align: right;
+}
+
+.bannerWrapper h2 {
+padding: 20px 0 5px 0;
+}
+

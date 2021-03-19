@@ -86,12 +86,4 @@
   top: 0px;
 }
 
-@media only screen and (max-width: 700px) {
-  .dropdownMenu {
-    height: auto;
-  }
-  .dropdownMenu ul {
-    display: block;
-    position: relative;
-  }
-}
+

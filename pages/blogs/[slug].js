@@ -45,7 +45,7 @@ const Blog = ({ blog, blogs }) => {
               <FacebookIcon size={32} />
             </FacebookShareButton>
 
-            <FacebookShareCount url={`https://inspiring-meninsky-421c5f.netlify.app/blogs/${blog.slug}`} />
+            <FacebookShareCount url={`https://inspiring-meninsky-421c5f.netlify.app/blogs/${blog.slug}`}>{(shareCount) => <span className="myShareCountWrapper">{shareCount}</span>}</FacebookShareCount>
 
             <LinkedinShareButton>
               <LinkedinIcon size={32} />

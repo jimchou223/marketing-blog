@@ -7,12 +7,11 @@ import Head from "next/head";
 import { useState } from "react";
 import { Collapse, Button, CardBody, Card } from "reactstrap";
 
-// import { FacebookShareButton, FacebookIcon, LinkedinIcon, TwitterIcon, LinkedinShareButton, TwitterShareButton, FacebookShareCount } from "react-share";
-import { FacebookShareButton, FacebookIcon } from "next-share";
+import { FacebookShareButton, FacebookIcon, LinkedinIcon, TwitterIcon, LinkedinShareButton, TwitterShareButton, FacebookShareCount } from "react-share";
+// import { FacebookShareButton, FacebookIcon } from "next-share";
 
 const Blog = ({ blog, blogs }) => {
   const [isOpen, setIsOpen] = useState(true);
-  console.log(blog.slug);
 
   const toggle = () => setIsOpen(!isOpen);
   const router = useRouter();

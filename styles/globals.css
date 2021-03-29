@@ -144,3 +144,8 @@ h3 {
   border-color: var(--color-red) !important;
   color: #f7f7f7 !important;
 }
+
+
+form span {
+  color: var(--color-red);
+}

@@ -61,7 +61,7 @@
   animation: jump 1s infinite;
   visibility: visible;
   opacity: 1;
-  color: #17b978;
+  color: var(--color-red);
 }
 
 .hoverText {

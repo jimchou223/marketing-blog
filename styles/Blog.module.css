@@ -85,7 +85,7 @@
 }
 
 .goback a {
-  background-color: #17b978;
+  background-color: var(--color-red);
   padding: 10px 20px;
   color: #000;
 }

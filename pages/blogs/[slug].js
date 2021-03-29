@@ -7,10 +7,12 @@ import Head from "next/head";
 import { useState } from "react";
 import { Collapse, Button, CardBody, Card } from "reactstrap";
 
-import { FacebookShareButton, FacebookIcon, LinkedinIcon, TwitterIcon, LinkedinShareButton, TwitterShareButton, FacebookShareCount } from "react-share";
+// import { FacebookShareButton, FacebookIcon, LinkedinIcon, TwitterIcon, LinkedinShareButton, TwitterShareButton, FacebookShareCount } from "react-share";
+import { FacebookShareButton, FacebookIcon } from "next-share";
 
 const Blog = ({ blog, blogs }) => {
   const [isOpen, setIsOpen] = useState(true);
+  console.log(blog.slug);
 
   const toggle = () => setIsOpen(!isOpen);
   const router = useRouter();
@@ -19,7 +21,7 @@ const Blog = ({ blog, blogs }) => {
     router.back();
   };
 
-  const blogContent = marked(blog.content)
+  const blogContent = marked(blog.content);
 
   return (
     <div className={styles.blogContainer}>
@@ -40,11 +42,11 @@ const Blog = ({ blog, blogs }) => {
         <div className={styles.buttonsWrapper}>
           <div className={styles.shareButtons}>
             <p>Share on</p>
-            <FacebookShareButton>
+            <FacebookShareButton url={`https://inspiring-meninsky-421c5f.netlify.app/blogs/${blog.slug}`}>
               <FacebookIcon size={32} />
             </FacebookShareButton>
 
-            <FacebookShareCount url="https://transbiz.com.tw/growth-by-crossborder-ecommerce/" />
+            <FacebookShareCount url={`https://inspiring-meninsky-421c5f.netlify.app/blogs/${blog.slug}`} />
 
             <LinkedinShareButton>
               <LinkedinIcon size={32} />

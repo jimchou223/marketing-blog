@@ -19,6 +19,7 @@
     "marked": "^2.0.0",
     "moment": "^2.29.1",
     "next": "10.0.6",
+    "next-share": "0.0.2",
     "pg": "^8.5.1",
     "pg-connection-string": "^2.4.0",
     "popper.js": "^1.16.1",

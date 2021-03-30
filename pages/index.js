@@ -5,8 +5,7 @@ import Blogs from "../components/blogs";
 import { Button } from "reactstrap";
 import Head from "next/head";
 import Link from "next/link";
-import Subbanner from "../components/Subbanner";
-import Belt from "../components/Belt";
+import Banner from '../components/Banner'
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -83,6 +82,7 @@ const blogs = ({ blogs, categories }) => {
         <h2 className="center">文章列表</h2>
       </div> */}
       {/* <Subbanner/> */}
+      <Banner/>
 
       <div className={styles.blogsWrapper}>
         <div className={styles.articlesContainer}>
@@ -194,7 +194,6 @@ const blogs = ({ blogs, categories }) => {
           </div>
         </div>
       </div>
-      <Belt />
     </div>
   );
 };

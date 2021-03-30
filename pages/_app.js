@@ -8,9 +8,6 @@ import Navs from "../components/Navs";
 
 import navConfig from "../config/navconfig";
 
-import { AuthProvider } from "../context/AuthContext";
-import Banner from "../components/Banner";
-
 
 
 
@@ -40,7 +37,7 @@ function MyApp({ Component, pageProps }) {
       <content>
         <Header  />
         <Navs config={navConfig} />
-        <Banner/>
+        
         {/* <div className={styles.socialBarContainer}>
           <SocialBar />
         </div> */}

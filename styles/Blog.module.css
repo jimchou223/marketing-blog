@@ -85,9 +85,10 @@
 }
 
 .goback a {
-  background-color: var(--color-red);
+  background-color: var(--color-5);
   padding: 10px 20px;
-  color: #000;
+  color: #fff;
+  border-radius: 10px;
 }
 
 .sideBar {
@@ -104,8 +105,8 @@
 }
 
 .sideBarList img {
-  width: 80px;
-  height: 60px;
+  width: 320px;
+  height: 180px;
   margin-right: 10px;
 }
 

@@ -52,7 +52,7 @@ export default function Announce(props) {
     <div className={styles.blogsContainer}>
       <h4 className="center">{props.title}</h4>
       <ul className={styles.blogsWrapper}>
-        {items.map(({ id, date, title, content, slug, image, created_at, blog_category }) => (
+        {items.map(({ id, title, content, slug, image, created_at, blog_category, preview }) => (
           <li className={styles.blogCard} key={id}>
             <i className={`${styles.tag} ${blog_category.tag}`}></i>
             <Link href={`/blogs/${slug}`}>
@@ -68,7 +68,7 @@ export default function Announce(props) {
 
                   <h4>{title}</h4>
 
-                  <p>{content.substring(0, 30) + "..."}</p>
+                  <p>{preview.substring(0, 30) + "..."}</p>
 
                   <p className={styles.hoverText}>Continue reading</p>
                 </div>

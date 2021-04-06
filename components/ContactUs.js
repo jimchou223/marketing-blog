@@ -74,7 +74,7 @@ const Example = (props) => {
       </FormGroup>
 
       <FormGroup className="mb-4">
-        <Button>送出</Button>
+        <Button className="deep">送出</Button>
       </FormGroup>
     </Form>
   );

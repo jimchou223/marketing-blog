@@ -18,20 +18,8 @@ const Footer = () => {
           <ul>
             <li>
               <a>
-                <i className="fab fa-instagram-square"></i>
-                Instsgram
-              </a>
-            </li>
-            <li>
-              <a>
-                <i className="fab fa-facebook-square"></i>
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a>
                 <i className="fas fa-envelope"></i>
-                Email：jimchou223@gmail.com
+                Email：maritimesilkroadmarketing@gmail.com
               </a>
             </li>
           </ul>

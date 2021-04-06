@@ -1,8 +1,8 @@
 .navWrapper {
   color: #000;
   box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
-  background-color: var(--color-2);
-  color: var(--color-5);
+  background-color: var(--color-5);
+  color: var(--color-1);
 }
 
 .dropdownMenu {
@@ -27,7 +27,7 @@
 
 .dropdownMenu li,
 .dropdownMenu li a {
-  color: var(--color-5);
+  color: var(--color-1);
 }
 
 .dropdownMenu li li a,

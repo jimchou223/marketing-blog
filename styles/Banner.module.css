@@ -2,7 +2,6 @@
   background-image: url("../public/banner.jpg");
   height: 500px;
   text-align: right;
-  background-size: cover;
   background-position-y: -200px;
   color: var(--color-2);
   position: relative;
@@ -37,5 +36,5 @@
 .bannerWrapper h2 {
   border-top: 1px solid var(--color-2);
   top: 180px;
-  line-height: 2;
+  line-height: 1.5;
 }

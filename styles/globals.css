@@ -140,6 +140,9 @@ h3 {
   color: #f7f7f7 !important;
 }
 
+.deep {
+  background-color: var(--color-5);
+}
 
 form span {
   color: var(--color-red);
